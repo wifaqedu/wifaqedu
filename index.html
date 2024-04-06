@@ -1,0 +1,168 @@
+<!DOCTYPE html><html dir="ltr" lang="en-US"><head>
+	<meta charset="utf-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>বেফাকুল মাদারিসিল আরাবিয়া বাংলাদেশ</title>
+	<!-- style -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="pdiv" style="margin-top: 20px; display: none;"></div>
+	<div class="logo">
+		<a href="/" style="width: 100%;">
+		<div class="banner-title">
+			<div class="">
+				  <img src="images/logo.png">
+			</div>
+			<div class="m-name">
+			  <h1 class="logo-name base-color">বেফাকুল মাদারিসিল আরাবিয়া বাংলাদেশ</h1>
+			  <h3 class="logo-sub base-sub-color">কওমি মাদরাসা শিক্ষা বোর্ড</h3>
+	        <h3 class="title-head">৪৭তম কেন্দ্রীয় পরীক্ষা <br>১৪৪৫ হিজরি/১৪৩০ বঙ্গাব্দ/২০২৪ ঈসাব্দ</h3>
+
+			</div>
+		</div>
+		</a>
+	  	
+	</div>
+	<span class="hr" style="display: none;">
+		<hr>
+	</span>
+	<ul class="sidebar">
+  <li><a href="#" class="active" data-target="personal-result" onclick="showMenu(this)"> ব্যক্তিগত ফলাফল</a> </li>
+  <li><a href="#" class="" data-target="madrasa-result" onclick="showMenu(this)">মাদরাসাওয়ারী ফলাফল</a> </li>
+  <li><a href="#" class="" data-target="merit-list" onclick="showMenu(this)">মেধা তালিকা</a> </li>
+</ul>
+<div class="nav">
+  <input type="checkbox" id="nav-check">
+  <div class="nav-btn">
+    <label for="nav-check">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+  </div>
+  <div class="nav-links">
+    <li><a href="#" class="active" data-target="personal-result" onclick="showMenu(this)"> ব্যক্তিগত ফলাফল</a> </li>
+    <li><a href="#" class="" data-target="madrasa-result" onclick="showMenu(this)">মাদরাসাওয়ারী ফলাফল</a> </li>
+    <li><a href="#" class="" data-target="merit-list" onclick="showMenu(this)">মেধা তালিকা</a> </li>
+  </div>
+</div>
+<div class="content">
+  <div class="container">
+    <div class="form">
+      <form id="personal-result" class="common activeMenu" action="personal-result" onsubmit="getResult(event)">
+        <h3 class="sub-title">৪৭তম কেন্দ্রীয় পরীক্ষা-১৪৪৫ হিজরি/১৪৩০ বঙ্গাব্দ/২০২৪ ঈসাব্দ</h3>
+        <h1 class="form-title">ব্যক্তিগত ফলাফল</h1>
+        <div class="form-fields">
+            <label for="standard-select">মারহালা নির্বাচন করুন</label>
+            <div class="select">
+              <select id="standard-select" name="cid" required="" onchange="enabled()">
+                                   <option value="2">ফযীলত </option>
+                                   <option value="3">সানাবিয়া উলইয়া </option>
+                                   <option value="5">মুতাওয়াসসিতাহ </option>
+                                   <option value="6">ইবতিদাইয়্যাহ </option>
+                                   <option value="7">হিফযুল কুরআন </option>
+                                   <option value="8">ইলমুত তাজবীদ ওয়াল কিরাআত</option>
+                              </select>
+            </div>
+            <label for="standard-select">রোল নং (<span class="help-text">ইংরেজিতে লিখুন</span>)</label>
+            <input type="text" name="roll_no" class="form-control" required="" onkeydown="enabled()">
+            
+            <label for="standard-select">রেজি নং (<span class="help-text">ইংরেজিতে লিখুন</span>)</label>
+            <input type="text" name="reg_no" class="form-control" required="" onkeydown="enabled()">
+
+            <div class="button">
+              <a type="submit" class="btn" href="https://i.postimg.cc/Gpx6hNV2/20240406-215110.jpg" target="_blank" ;">Search</a>,
+            </div>
+        </div>
+      </form>
+
+      <!-- মাদরাসাওয়ারী ফলাফল -->
+      <form id="madrasa-result" class="common hide" action="madrasa-result" onsubmit="getResult(event)">
+        <h3 class="sub-title">৪৭তম কেন্দ্রীয় পরীক্ষা-১৪৪৫ হিজরি/১৪৩০ বঙ্গাব্দ/২০২৪ ঈসাব্দ</h3>
+        <h1 class="form-title">মাদরাসাওয়ারী ফলাফল</h1>
+        <div class="form-fields">
+            <label for="standard-select">মারহালা নির্বাচন করুন</label>
+            <div class="select">
+              <select id="standard-select" name="cid" required="" onchange="enabled()">
+                                   <option value="2">ফযীলত </option>
+                                   <option value="3">সানাবিয়া উলইয়া </option>
+                                   <option value="5">মুতাওয়াসসিতাহ </option>
+                                   <option value="6">ইবতিদাইয়্যাহ </option>
+                                   <option value="7">হিফযুল কুরআন </option>
+                                   <option value="8">ইলমুত তাজবীদ ওয়াল কিরাআত</option>
+                              </select>
+            </div>
+            <label for="standard-select">ইলহাক নং(<span class="help-text">ইংরেজিতে লিখুন এবং ম এর পরিবর্তে g লিখুন </span>)</label>
+            <input type="text" name="mllhaq" class="form-control" required="" onkeydown="enabled()">
+
+            <div class="mobile-search" style="display: none;">
+              <label for="standard-select" style="display: block;">মাদরাসা মোবাইল নং (<span class="help-text">ইংরেজিতে শেষ দুটি সংখ্যা টাইপ করুন</span>)</label>
+              <div class="input-group">
+                <span class="input-group-addon" id="digitsExceptLastTwo"> </span>
+                <input type="number" name="mobile" value="" minlength="2" onkeyup="enabledMobile()" required="">
+              </div>
+              <input type="hidden" name="mobile_pre" id="mobile_pre">
+            </div>
+
+            <div class="button mobile-btn">
+              <button type="button" class="btn" onclick="findMobile(event)">Next</button>
+            </div>
+
+            <div class="button submit-btn" style="display: none;">
+              <button type="submit" class="btn">Search</button>
+            </div>
+        </div>
+      </form>
+
+
+      <!-- মারহালাওয়ারী মেধা তালিকা -->
+      <form id="merit-list" class="common hide" action="merit-result" onsubmit="getResult(event)">
+        <h3 class="sub-title">৪৭তম কেন্দ্রীয় পরীক্ষা-১৪৪৫ হিজরি/১৪৩০ বঙ্গাব্দ/২০২৪ ঈসাব্দ</h3>
+        <h1 class="form-title">মারহালাওয়ারী মেধা তালিকা</h1>
+        <div class="form-fields">
+            <label for="standard-select">মারহালা নির্বাচন করুন</label>
+            <div class="select">
+              <select id="standard-select" name="cid" required="" onchange="enabled()">
+                                   <option value="2">ফযীলত </option>
+                                   <option value="3">সানাবিয়া উলইয়া </option>
+                                   <option value="5">মুতাওয়াসসিতাহ </option>
+                                   <option value="6">ইবতিদাইয়্যাহ </option>
+                                   <option value="7">হিফযুল কুরআন </option>
+                                   <option value="8">ইলমুত তাজবীদ ওয়াল কিরাআত</option>
+                              </select>
+            </div>
+
+            <label for="standard-select">ধরন নির্বাচন করূন</label>
+            <div class="select">
+              <select id="standard-select" name="s_type" required="" onchange="enabled()">
+                   <option value="1">ছাত্র</option>
+                   <option value="0">ছাত্রী</option>
+              </select>
+            </div>
+            <div class="button">
+              <button type="submit" class="btn" disabled="">Search</button>
+            </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="print" style="display: none;">
+  <button id="printBtn" type="button">Print</button>
+  <button id="pdfBtn" type="button">Download PDF</button>
+</div>
+
+<div id="result"> </div>
+
+<footer>
+    <p class="footer-left">© <script>document.write(new Date().getFullYear());</script>2024<a href="https://wifaqbd.org" target="_blank" style="font-size: 18px;">, বেফাকুল মাদারিসিল আরাবিয়া, বাংলাদেশ</a>, Developed By:  <a href="http://bigm-bd.com" target="_blank"> BIG M Resources Limited</a></p>
+</footer>
+<p class="vm-info" style="text-align: center;">VM3</p>
+<script type="text/javascript">
+    const printBtn=document.getElementById("printBtn"),pdfBtn=document.getElementById("pdfBtn");function showMenu(e){enabled(),document.querySelectorAll(".active").forEach(function(e){e.classList.remove("active")}),document.getElementById("nav-check").checked=!1,document.querySelector(".print").style.display="none",e.classList.add("active"),document.getElementById("result").innerHTML="",document.querySelectorAll(".common").forEach(function(e){e.style.display="none",e.classList.remove("activeMenu")}),document.getElementById(e.getAttribute("data-target")).style.display="block",document.getElementById(e.getAttribute("data-target")).classList.add("activeMenu")}function getResult(e){e.preventDefault(),disabled(),document.querySelector("#pdfBtn").style.display="none","merit-list"!=e.target.id&&(document.querySelector("#pdfBtn").style.display="inline-block");let t=new FormData(e.target);fetch(e.target.action,{method:"POST",body:t}).then(e=>e.text()).then(e=>{document.getElementById("result").innerHTML=e,document.querySelector(".print").style.display="block"}).catch(e=>{console.error(e)})}function disabled(){document.querySelectorAll(".btn").forEach(function(e){e.setAttribute("disabled",!0)})}function enabled(){document.querySelectorAll(".btn").forEach(function(e){e.removeAttribute("disabled")})}function enabledMobile(){document.querySelector("input[name=mobile]").value.length>1?document.querySelectorAll(".btn").forEach(function(e){e.removeAttribute("disabled")}):disabled()}function findMobile(e){let t=document.querySelector('[name="mllhaq"]').value;t.length<1?alert("সঠিক ইলহাক নং লিখুন।"):fetch("mobile-search",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({mllhaq:t})}).then(e=>e.text()).then(e=>{if(disabled(),document.getElementById("result").innerHTML="","mlhaqNotFound"==e)return document.getElementById("result").innerHTML='<h5 class="text-center no-result">সঠিক ইলহাক নং লিখুন।</h5>',!1;if(document.querySelector(".mobile-search").style.display="block",e.length<8)document.getElementById("digitsExceptLastTwo").innerHTML="সঠিক মোবাইল নাম্বার লিখুন।",document.querySelector(".input-group-addon").style.width="100%",document.querySelector(".input-group > input").style.display="none",mobilebtnEnable();else{document.querySelector(".input-group-addon").style.width="inherit",document.querySelector(".input-group > input").style.display="block";let t=e.slice(0,-2);document.getElementById("digitsExceptLastTwo").innerHTML=t+"XX",document.getElementById("mobile_pre").value=t,mobilebtnDisable()}}).catch(e=>console.error(e))}function mobilebtnEnable(){document.querySelector(".mobile-btn").style.display="block",document.querySelector(".submit-btn").style.display="none"}function mobilebtnDisable(){document.querySelector(".mobile-btn").style.display="none",document.querySelector(".submit-btn").style.display="block"}printBtn.addEventListener("click",()=>{document.querySelector(".pdiv").style.display="block",document.querySelector(".hr").style.display="block",document.querySelector(".print").style.display="none",window.print(),document.querySelector(".print").style.display="block",document.querySelector(".pdiv").style.display="none"}),pdfBtn.addEventListener("click",()=>{let e=document.querySelector(".activeMenu"),t=e.action;e.action=t+"/pdf",e.method="POST",e.submit(),e.action=t});
+</script>
+
+ 
+</body></html>
